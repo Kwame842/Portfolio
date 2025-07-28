@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Kwame A. Boateng</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a0a0a;
+      padding: 20px;
+      text-align: center;
+    }
+    header a {
+      color: #4cafef;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4cafef;
+      margin-bottom: 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .intro img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #4cafef;
+      margin-bottom: 15px;
+    }
+    .intro h2 {
+      margin: 10px 0;
+    }
+    .intro p {
+      font-size: 16px;
+      color: #ccc;
+    }
+    .skills-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .skill-card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out, background 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      background: #242424;
+    }
+    .skill-card i {
+      font-size: 40px;
+      color: #4cafef;
+      margin-bottom: 10px;
+    }
+    .timeline {
+      margin-top: 50px;
+    }
+    .timeline h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4cafef;
+    }
+    .timeline-item {
+      position: relative;
+      margin: 20px 0;
+      padding-left: 40px;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      width: 10px;
+      height: 10px;
+      background: #4cafef;
+      border-radius: 50%;
+    }
+    .timeline-item h3 {
+      margin: 0;
+      color: #fff;
+    }
+    .timeline-item span {
+      font-size: 14px;
+      color: #aaa;
+    }
+    footer {
+      background: #222;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 40px;
+    }
+    .social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #4cafef;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #82d1ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Back to Homepage</a>
+  </header>
+
+  <div class="container">
+    <h1>About Me</h1>
+    <div class="intro">
+      <img src="Images/myImage.png" alt="Portrait of Kwame A. Boateng" />
+      <h2>Kwame A. Boateng</h2>
+      <p>
+        I'm a Data Engineer passionate about designing scalable data pipelines, optimizing cloud infrastructures, 
+        and transforming raw data into powerful insights. I love solving data problems that enable businesses 
+        to make smarter decisions.
+      </p>
+    </div>
+
+    <h2 class="section-title" style="text-align: center; color: #4cafef;">Core Skills</h2>
+    <div class="skills-section">
+      <div class="skill-card">
+        <i class="bx bx-data"></i>
+        <h3>ETL Pipelines</h3>
+        <p>Designing and automating ETL workflows using Spark, AWS Glue, and Airflow.</p>
+      </div>
+      <div class="skill-card">
+        <i class="bx bx-cloud-upload"></i>
+        <h3>Cloud Platforms</h3>
+        <p>Experience with AWS, Azure, and GCP for scalable data infrastructure.</p>
+      </div>
+      <div class="skill-card">
+        <i class="bx bx-line-chart"></i>
+        <h3>Data Warehousing</h3>
+        <p>Building optimized warehouses (Redshift, Snowflake, BigQuery) for analytics.</p>
+      </div>
+      <div class="skill-card">
+        <i class="bx bx-check-shield"></i>
+        <h3>Data Quality</h3>
+        <p>Implementing validation frameworks to ensure data reliability and compliance.</p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <h2>My Journey</h2>
+      <div class="timeline-item">
+        <h3>2025 – Present</h3>
+        <span>Data Engineer – Specialized in AWS pipelines and big data solutions.</span>
+      </div>
+      <div class="timeline-item">
+        <h3>2023 – 2024</h3>
+        <span>Data Analytics – Built insightful and intuitive dashboards for business stakeholders.</span>
+      </div>
+      <div class="timeline-item">
+        <h3>2022</h3>
+        <span>IT Support – Developed strong foundations in system and network management.</span>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/Kwame842" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://www.linkedin.com/in/kwame-boateng01/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://wa.me/qr/F64Z23MSM4E5G1" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Kwame Tech | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
