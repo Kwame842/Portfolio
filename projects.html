@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Kwame A. Boateng</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0a0a0a;
+        color: #f0f0f0;
+      }
+
+      header {
+        background-color: #0a0a0a;
+        color: #f0f0f0;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      header a {
+        color: #4cafef;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #4cafef;
+      }
+
+      .project-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .project {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .project:hover {
+        transform: translateY(-5px);
+      }
+
+      .project i {
+        font-size: 50px;
+        color: #4cafef;
+        margin-bottom: 15px;
+      }
+
+      .project h2 {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #4cafef;
+      }
+
+      .project p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #ccc;
+      }
+
+      .project a {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 15px;
+        background-color: #4cafef;
+        color: #000;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      .project a:hover {
+        background-color: #3a8ec9;
+      }
+
+      footer {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 12px 0;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Projects</h1>
+      <a href="index.html">← Back to Homepage</a>
+    </header>
+
+    <main>
+      <div class="project-list">
+        <section class="project">
+          <i class="bx bx-data"></i>
+          <h2>Automated ETL Pipeline</h2>
+          <p>
+            Built a serverless ETL pipeline using AWS Glue, Lambda, and S3 to
+            process and transform data daily for analytics.
+          </p>
+          <a
+            href="https://github.com/Kwame842/nsp-bolt-pipeline"
+            target="_blank"
+            >View Details</a
+          >
+        </section>
+
+        <section class="project">
+          <i class="bx bx-cloud-upload"></i>
+          <h2>Cloud Data Lake</h2>
+          <p>
+            Designed a scalable data lake using AWS S3 and Athena with
+            partitioned Parquet files for cost-efficient queries.
+          </p>
+          <a
+            href="https://github.com/Kwame842/lakehouse-pipeline"
+            target="_blank"
+            >View Details</a
+          >
+        </section>
+
+        <section class="project">
+          <i class="bx bx-line-chart"></i>
+          <h2>Real-Time Streaming</h2>
+          <p>
+            Developed a Kafka + Spark streaming system for live data ingestion
+            and instant dashboard updates.
+          </p>
+          <a
+            href="https://github.com/Kwame842/Music-Streaming-ETL-Pipeline-with-AWS-Glue-DynamoDB-MWAA"
+            target="_blank"
+            >View Details</a
+          >
+        </section>
+
+        <section class="project">
+          <i class="bx bx-check-shield"></i>
+          <h2>Data Quality Automation</h2>
+          <p>
+            Built a Python-based framework using Great Expectations to enforce
+            schema validation and ensure clean data.
+          </p>
+          <a href="https://github.com/yourusername/data-quality" target="_blank"
+            >View Details</a
+          >
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Check out my GitHub for more projects.</p>
+    </footer>
+  </body>
+</html>
