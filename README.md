@@ -5,6 +5,7 @@ It showcases my professional background, technical skills, projects, and service
 The site is built using **HTML, CSS, and Boxicons** for a clean and responsive design.
 
 ---
+![MainPage](Images/Portfolio-Site.png)
 
 ## Live Preview
 
